@@ -17,6 +17,7 @@ includes:
   - integrations
   - reference
   - errors
+  - faq
 
 search: true
 ---
