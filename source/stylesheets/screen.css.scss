@@ -22,7 +22,7 @@ under the License.
 ////////////////////////////////////////////////////////////////////////////////
 // GENERAL STUFF
 ////////////////////////////////////////////////////////////////////////////////
-
+$default-font-size: 15px;
 html, body {
   color: $main-text;
   padding: 0;
@@ -33,6 +33,7 @@ html, body {
   background-color: $main-bg;
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
+  font-size: $default-font-size;
 }
 
 .content a {
@@ -224,6 +225,7 @@ html, body {
     li,a {
       color: $nav-text;
       text-decoration: none;
+      font-size: 12px;
     }
 
     a:hover {
@@ -410,13 +412,13 @@ html, body {
 
   h3, h4, h5, h6 {
     @extend %header-font;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 2.5em;
     margin-bottom: 0.8em;
   }
 
   h4, h5, h6 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   hr {
@@ -541,6 +543,9 @@ html, body {
 // This is all the stuff that appears in the right half of the page
 
 .content {
+  pre, blockquote, code {
+    font-size: 13px;
+  }
   pre, blockquote {
     background-color: $code-bg;
     color: #fff;
